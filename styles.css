@@ -74,19 +74,19 @@ h6 {
 
 
 h1 {
-  color: #077ac0;
-  font-size: 2.5rem;
+  color: #fff;
+  font-size: 2rem;
 }
 
 h2 {
   color: #333;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 p {
-  color: #555;
+  color: #fff;
   font-size: 1rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.1rem;
 }
 
 header {
@@ -140,6 +140,24 @@ header {
   width: 100%;
   max-width: 1200px;
   gap: 2rem;
+}
+
+.btn-2 {
+  display: inline-block;
+  flex-wrap: wrap;
+  align-content: center;
+  min-height: 54px;
+  height: 72px;
+  padding: 10px 1.25rem;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #077AC0;
+  transition: all 0.2s linear;
+  box-shadow: 0px 5px 0 rgba(0,0, 0, 0.15);
+  background-color: #fff;
+  border: 2px solid;
+  text-decoration: none;
 }
 
 
@@ -221,7 +239,7 @@ header {
 .hero {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   width: 100%
 }
 
@@ -231,8 +249,11 @@ header,
 .navbar {
   max-width: none !important;
   width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+
+}
+
+header {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 html, body {
@@ -244,4 +265,54 @@ html, body {
   max-height: 50px;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.hero-container > .container-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0.9rem;
+  background: #077AC0;
+  height: auto;
+  
+}
+.hero-container > .container-items > h1 {
+  font-size: 1.2rem;
+  line-height: 32px;
+  margin-bottom: 1.1rem;
+  font-weight: 700;
+  font-family: "Inter", Arial, sans-serif;
+
+}
+.hero-container > .container-items > p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-family: "Inter", Arial, sans-serif;
+  
+  line-height: 1.5rem;
+}
+
+.hero-container > .container-items > .items {
+  width: 100;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.items > .btn-2 {
+  border: solid 2px #333;
+}
+
+.navbar > .nav-links > .btn-2 {
+  display: none;
+}
+
+.container {
+  width: 100%;
+}
+ 
 }
