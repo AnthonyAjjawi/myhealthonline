@@ -152,13 +152,18 @@ header {
   border-radius: 12px;
   text-align: center;
   font-size: 1.1rem;
-  color: #077AC0;
+  color: #ffff;
   transition: all 0.2s linear;
   box-shadow: 0px 5px 0 rgba(0,0, 0, 0.15);
-  background-color: #fff;
+  background-color: #077AC0;
   border: 2px solid;
   text-decoration: none;
+  font-family: "Inter", Arial, sans-serif;
 }
+
+
+
+
 
 
 @media screen and (max-width: 767px) {
@@ -183,7 +188,7 @@ header {
   position: fixed;        
   top: 80px;              
   left: 0;                
-  width: 100vw;           
+  width: 100%;           
   background: #fff;
   opacity: 0;
   max-height: 0;
@@ -277,6 +282,7 @@ html, body {
   justify-content: space-between;
   padding: 1rem 0.9rem;
   background: #077AC0;
+  
   height: auto;
   
 }
@@ -297,14 +303,19 @@ html, body {
 }
 
 .hero-container > .container-items > .items {
-  width: 100;
+  width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
   display: block;
 }
 
-.items > .btn-2 {
-  border: solid 2px #333;
+.items > .hero-btn {
+  border: solid 2px #005cad;
+  color: #005cad;
+  font-weight: 900;
+  background: #fff;
+  font-family: "Inter";
+  font-size: 1rem;
 }
 
 .navbar > .nav-links > .btn-2 {
@@ -313,6 +324,20 @@ html, body {
 
 .container {
   width: 100%;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.container > p {
+  color: #3333 !important;
+}
+
+body {
+  line-height: 1.72;
+}
+
+.container-items > .hero-btn {
+  background-color:white;
 }
  
 }
