@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const menuItems = document.querySelector(".nav-list");
   const closeBtn = document.querySelector(".close-btn");
-  const menuIcon = document.querySelector(".navbar a.icon");
+  const menuIcon = document.querySelector(".mobile-logo");
 
   // Open menu
   menuIcon.addEventListener("click", () => {
