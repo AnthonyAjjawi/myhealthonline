@@ -12,13 +12,6 @@
   margin: 0;
 }
 
-/* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
-}
-
 body {
   /* 4. Add accessible line-height */
   line-height: 1.5;
@@ -103,7 +96,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  padding: 1rem;
+
 }
 
 .navbar {
@@ -142,15 +135,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* horizontally centers items */
   text-align: center;
-  /* centers text within */
   margin: 0 auto;
-  /* centers the whole block */
   width: 100%;
-  /* makes sure it spans the container */
   max-width: 1200px;
-  /* prevents it from stretching too wide on desktop */
   gap: 2rem;
 }
 
@@ -163,26 +151,31 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
   background: #fff;
   z-index: 999;
 }
 
-/* hide menu initially */
 .nav-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
-  top: 80px; 
-  width: 100vw;
-  max-height: 0;
+  justify-content: flex-start;
+  position: fixed;        
+  top: 80px;              
+  left: 0;                
+  width: 100vw;           
   background: #fff;
   opacity: 0;
+  max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  z-index: 1000;
 }
 
 /* show when active */
@@ -227,9 +220,28 @@ header {
 
 .hero {
   display: flex;
+  align-items: center;
+  padding: 2rem;
   width: 100%
 }
 
 
+header,
+.container-one,
+.navbar {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero > img {
+  max-height: 50px;
+}
 
 }
