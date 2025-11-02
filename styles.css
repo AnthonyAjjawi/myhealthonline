@@ -164,7 +164,33 @@ header {
   font-family: "Inter", Arial, sans-serif;
 }
 
+@media screen and (min-width: 767px) {
 
+  .mobile-menu {
+    padding: 1rem;
+  }
+  .mobile-menu-inner {
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .container-one .mobile-logo{
+    display: none;
+  }
+}
 
 
 
@@ -347,11 +373,7 @@ body {
   background-color:white;
 }
 
-.third-section {
-  padding: 2rem 0.5rem;
-}
-
-
+/* second - section */
 .second-section {
   display: flex;
   flex-direction: column;
@@ -362,18 +384,27 @@ body {
   width: 100%;
   gap: 2rem;
 }
+
+
+
+/* third section */
+
+.third-section {
+  padding: 2rem 0.5rem;
+}
 .third-section > h2 {
   text-align: center;
   
 }
-
+/* fourth section */
 .fourth-section {
   background: #E1F5FF;
 }
 
 .fourth {
   margin-top: 0;
-  padding: 2rem 0;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .fold-picture {
@@ -384,7 +415,7 @@ body {
 }
 
 .content-four-section {
-  padding: 0 3rem;
+  padding: 2rem 3rem;
 }
 
 .content-four-section > h2 {
@@ -424,8 +455,24 @@ body {
   color: #077AC0;
 
 }
+/* fifth section */
+.fifth-section {
+  padding: 2rem 2rem;
+  background: #f6f6f6;
+  margin:0;
+}
 
+.telemedicine {
+  width: 60%;
+  justify-self: center;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
 
-
+.fifth-header {
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-family: "Inter", Arial, sans-serif;
+}
  
 }
