@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,43 +14,44 @@
     <title>My Symptoms Online</title>
 </head>
 
-<body>
-     <span class="close-btn">&times;</span>
+<body class="no-scroll">
+    <nav class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <button class="close-btn">&times;</button>
+            <ul class="nav-list">
+
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Sign Up</a></li>
+                <li><a href="">Sign In</a></li>
+
+            </ul>
+            <div class="nav-links">
+                <a class="btn-1" href="">Customer Space</a>
+                <a class="btn-2" href="">Get a link</a>
+            </div>
+        </div>
+
+    </nav>
+
     <header>
         <div class="container-one hero">
-          
-     
-        <img src="./assets/BlueCrossON.svg" alt="">
+            <img src="./assets/BlueCrossON.svg" alt="">
+            <a href="javascript:void(0);" class="mobile-logo" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
 
-          <nav class="navbar mobile-header">
-                 
-                <ul class="nav-list">
-                   
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Sign Up</a></li>
-                    <li><a href="">Sign In</a></li>
-                      <div class="nav-links">
-                    <a class="btn-1" href="">Customer Space</a>
-                    <a class="btn-2" href="">Get a link</a>
-                </div>
-                </ul>
-              
-                <a href="javascript:void(0);" class="mobile-logo" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </nav>
-           </div>
+        </div>
     </header>
     <main>
         <section class="hero-container">
             <div class="container-items">
                 <div class="items">
                     <h1>My Symptoms Online</h1>
-                <p>A tailored online health app for Canadians to monitor, track, and predict their symptoms.</p>
-                <a class="btn-2 hero-btn" href="">Learn about My Symptoms Online</a>
+                    <p>A tailored online health app for Canadians to monitor, track, and predict their symptoms.</p>
+                    <a class="btn-2 hero-btn" href="">Learn about My Symptoms Online</a>
                 </div>
-                
+
             </div>
             <img src="./assets/tennis.jpeg" alt="">
         </section>
@@ -59,19 +60,19 @@
                 <div class="fold-content">
                     <img src="./assets/assurance-voyage-nouveau.png" alt="">
                     <h2>Monitor Your Health</h2>
-                    <p>Get 24/7 monitoring for your health</p>
+                    <p class="container-paragraph">Get 24/7 monitoring for your health</p>
                     <a class="btn-2" href="">Explore My Symptons Online</a>
                 </div>
                 <div class="fold-content">
                     <img src="./assets/assurance-sante-nouveau.png" alt="">
                     <h2>Track Your Health</h2>
-                    <p>Tailored Health app for Canadians</p>
+                    <p class="container-paragraph">Tailored Health app for Canadians</p>
                     <a class="btn-2" href="">Explore My Symptons Online</a>
                 </div>
                 <div class="fold-content">
                     <img src="./assets/life-insurance-nouveau.png" alt="">
                     <h2>Predict Your Health</h2>
-                    <p>Tailored Health app for Canadians</p>
+                    <p class="container-paragraph">Tailored Health app for Canadians</p>
                     <a class="btn-2" href="">Explore My Symptoms Online</a>
                 </div>
             </div>
@@ -83,38 +84,43 @@
                     src="blob:https://streams.bitmovin.com/68f6f5da-72a3-4c41-988a-800aae448408"></video>
             </div>
         </section>
-        <section class="container">
+        <section class="container fourth">
             <div class="container-one fourth-section">
                 <div class="fold-picture">
-                    <img src="" alt="">
+                    <img src="./assets/ec-mobile-plage.png" alt="">
                 </div>
-                <div class="content">
+                <div class="content-four-section">
                     <h2>Take charge of your health today</h2>
-                    <p>with your monitoring, tracking, and predicting capabilities, managing your syptoms has never been
+                    <p class="container-paragraph">with your monitoring, tracking, and predicting capabilities, managing
+                        your syptoms has never been
                         easier</p>
                     <ul class="content-items">
-                        
+
                         <li>Access your health symptoms anywhere, anytime</li>
                         <li>Add or Remove household members</li>
                         <li>Monitor your health</li>
                         <li>Track your symptoms</li>
                         <li>Predict your symptoms in advance</li>
                     </ul>
-                    <a href="btn-2">Discover My Health Symptoms</a>
+                    <a class="btn-2" href="">Discover My Health Symptoms</a>
                 </div>
             </div>
+
+
+
         </section>
         <section>
             <div class="container-items">
                 <img src="./assets/ico-telemedecine.png" alt="">
                 <h2>Virtual Health Monitoring</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, maxime quasi asperiores fugiat,
+                <p class="container-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente,
+                    maxime quasi asperiores fugiat,
                     molestiae deleniti fuga commodi ipsa reiciendis necessitatibus modi quas assumenda voluptate.
                     Recusandae perferendis repellendus inventore unde quidem?</p>
                 <a href="btn-2">Learn more about my health symptons online</a>
             </div>
         </section>
-    
+
 
 
     </main>
