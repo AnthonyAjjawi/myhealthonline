@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // Close menu
   closeBtn.addEventListener("click", () => {
     menuItems.classList.remove("active");
-    document.body.classList.toggle("no-sroll");
+    document.body.classList.toggle("no-scroll");
   });
 });
