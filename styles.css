@@ -407,13 +407,17 @@ header {
   }
 
   header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
   }
 
   html,
   body {
     width: 100%;
-    overflow-x: hidden;
+  
   }
 
   .hero>img {

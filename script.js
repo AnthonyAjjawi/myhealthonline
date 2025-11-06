@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Open menu
   menuIcon.addEventListener("click", () => {
     menuItems.classList.toggle("active");
-    document.body.classList.toggle("no-sroll");
+    document.body.classList.toggle("no-scroll");
   });
 
   // Close menu
