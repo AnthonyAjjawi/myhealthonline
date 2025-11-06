@@ -573,13 +573,14 @@ header {
   }
 
   .content-items li::before {
-    content: "✔";
+    content: url(./assets/arrow.svg);
     position: absolute;
     left: 0;
     top: 3px;
     width: 16px;
     height: 16px;
     color: #077AC0;
+    padding-right: 0.625rem;
 
   }
 
